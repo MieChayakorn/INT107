@@ -1,0 +1,53 @@
+body{
+	font-family: 'Mitr', sans-serif;
+	background-color: #ffbbbb;
+}
+hr { 
+	margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#hrIndex { 
+	margin-top: 30px;
+	margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#welcome{
+	text-align: center;
+	color: #212F3D;
+	margin-top: 50px;
+}
+#divmenu{
+	margin-top: 20px;
+}
+#menu{
+	background-color: #212F3D;
+	padding: 7px;
+	border-radius: 5px;
+	color: white;
+}
+#menuAbout{
+	background-color: #E74C3C;
+	padding: 7px;
+	border-radius: 5px;
+	color: white;
+}
+#right{
+	height: auto;
+	padding: 10px;
+	float: right;
+	margin-right: 25px;
+	border: dashed;
+	text-align: center;
+}
+footer{
+		margin-top: 50px;
+		text-align: center;
+}
+table{
+	border: inset;
+}
+table td{
+	text-align: center;
+}
