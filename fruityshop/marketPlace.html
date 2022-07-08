@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Market Place - Fruity shop By MieChayakorn</title>
+        <link rel="shortcut icon" href="pic/cart.ico" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/semantic.css">
+
+        <style type="text/css">
+            @font-face {
+                 font-family: Mitr;
+                 src: url(font/Mitr.ttf);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ui three steps">
+            <div class="active step">
+                <a href="marketPlace.html">
+                    <div class="content">
+                        <div class="title">Shipping</div>
+                        <div class="description">Choose your shipping options</div>
+                    </div>
+                </a>
+            </div>
+            <div class="disabled step">
+                <div class="content">
+                    <div class="title">Billing</div>
+                    <div class="description">Enter billing information</div>
+                </div>
+            </div>
+            <div class="disabled step">
+                <div class="content">
+                    <div class="title">Confirm Order</div>
+                    <div class="description">Review your order details</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap cf">
+            <h1 class="projTitle">Shopping Cart<span>-ตะกร้าสินค้า</span> </h1>
+            <div class="heading cf">
+                <h1>My Cart</h1>
+                <a href="index.html" class="continue">Home Page</a>
+            </div>
+            <div class="cart">
+                <ul class="cartWrap">
+                    <li class="items odd">
+
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+                                <img src="pic/strawberry.jpg" alt="Strawberry-สตรอว์เบอร์รี" title="Strawberry-สตรอว์เบอร์รี โลละ300฿" class="itemImg" />
+                                <p class="itemNumber">#Strawberry-7052</p>
+                                <h3>Strawberry-สตรอว์เบอร์รี โลละ300฿</h3>
+
+                                <p> <input type="text" disabled class="qty" value="0" id="sumItemStrawberry"> x 300.00฿</p>
+
+                                <p class="stockStatus"> In Stock</p>
+                            </div>
+                            <div class="cartSection removeWrap"> 
+                                <a style="cursor: pointer;" class="remove" onclick="buttonDownStrawberry()">-</a>
+                            </div>
+                            <div class="prodTotal cartSection">
+                                <p id="sunStrawberry"><span id="strawberryPrice">00</span>.00฿</p>
+                            </div>
+                            <div class="cartSection removeWrap"> 
+                                <a style="cursor: pointer;" class="remove" onclick="buttonUpStrawberry()">+</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items even">
+
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+
+                                <img src="pic/guava.jpg" alt="Guava-ฝรั่ง" title="Guava-ฝรั่ง โลละ35฿" class="itemImg" />
+                                <p class="itemNumber">#Guava-7544</p>
+                                <h3>guava-ฝรั่ง โลละ35฿</h3>
+
+                                <p> <input type="text" disabled class="qty" value="0" id="sumItemGuava" > x 35.00฿</p>
+
+                                <p class="stockStatus"> In Stock</p>
+                            </div>
+                            <div class="cartSection removeWrap">
+                                <a style="cursor: pointer;" class="remove" onclick="buttonDownGuava()">-</a>
+                            </div>
+                            <div class="prodTotal cartSection">
+                                <p id="sumGuava"><span id="guavaPrice">00</span>.00฿</p>
+                            </div>
+                            <div class="cartSection removeWrap">
+                                <a style="cursor: pointer;" class="remove" onclick="buttonUpGuava()">+</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="items odd">
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+
+                                <img src="pic/durian.jpg" alt="Durian-ทุเรียน" title="Durian-ทุเรียน โลละ150฿" class="itemImg" />
+                                <p class="itemNumber">#Durian-7550</p>
+                                <h3>Durian-ทุเรียน โลละ150฿</h3>
+
+                                <p> <input type="text" disabled class="qty" placeholder="0"/> x 150.00฿</p>
+
+                                <p class="stockStatus out"> Out of Stock</p>
+                            </div>  
+
+
+                            <div class="prodTotal cartSection">
+                                <p>-- . -- ฿</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="items even">
+                        <div class="infoWrap"> 
+                            <div class="cartSection info">
+
+                                <img src="pic/peach.jpg" alt="Peach-พีช" title="Peach-พีช โลละ350฿" class="itemImg" />
+                                <p class="itemNumber">#Peach-4504</p>
+                                <h3>peach-พีช โลละ350฿</h3>
+
+                                <p> <input type="text" disabled class="qty" value="0" id="sumItemPeach"> x 350.00฿</p>
+
+                                <p class="stockStatus"> In Stock</p>
+
+                            </div>
+                            <div class="cartSection removeWrap">
+                                <a style="cursor: pointer;" class="remove" onclick="buttonDownPeach()">-</a>
+                            </div>
+
+                            <div class="prodTotal cartSection">
+                                <p id="sumPeach"><span id="peachPrice">00</span>.00฿</p>
+                            </div>
+                            <div class="cartSection removeWrap">
+                                <a  style="cursor: pointer;" class="remove" onclick="buttonUpPeach()">+</a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="items odd">
+                        <div class="infoWrap"> 
+                            <div class="cartSection">
+
+                                <img src="pic/mango.jpg" alt="Mango-มะม่วง" title="Mango-มะม่วง โลละ50฿" class="itemImg" />
+                                <p class="itemNumber">#Mango-7750</p>
+                                <h3>mango-มะม่วง โลละ50฿</h3>
+
+                                <p> <input type="text" disabled class="qty" placeholder="0"/> x 50.00฿</p>
+
+                                <p class="stockStatus out"> Out of Stock</p>
+                            </div>  
+
+
+                            <div class="prodTotal cartSection">
+                                <p>-- . -- ฿</p>
+                            </div>
+
+                        </div>
+                        <div class="special"><div class="specialContent">ขอให้สนุกกับการช้อปปิ้ง!!</div></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="promoCode" style="width: 300px;"><label for="promo">Have A Promo Code?</label>
+
+                <input type="text" name="promo" pattern="SKDSUMFUN" >
+                <button id="EnterCode" style="background-color: inherit; border: white;  cursor: pointer; padding:0px;" onclick="promoCode()">
+                    <a class="btn" style="padding-right: 40px; padding-left:10px; font-weight: bold;">Enter</a>
+                </button>
+            </div>
+
+            <div class="subtotal cf">
+                <ul>
+                    <li class="totalRow"><span class="label">Subtotal</span><span class="value"><span id="subtotal">00</span>.00฿</span></li>
+                    <li class="totalRow"><span class="label">VAT 7%</span><span class="value"><span id="vat">00.00</span>฿</span></li>
+                    <li class="totalRow final"><span class="label">Total</span><span class="value"><span id="total">00.00</span>฿</span></li>
+                    <li class="totalRow">
+                        <a href="payment.html" class="btn continue">Checkout</a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var ans = 0;
+            var sumAns=0;
+            var ansStrawberry=0;
+            var ansGuava=0;
+            var ansPeach=0;
+
+            var sumStrawberry=0;
+            var sumGuava=0;
+            var sumPeach=0;
+
+            var strawberryPrice=300;
+            var guavaPrice=35;
+            var peachPrice=350;
+
+
+            function clickCalculate(){
+            ans = ansStrawberry+ansGuava+ansPeach;
+            vat = parseFloat((7/100)*ans).toFixed(2);
+            ansPlusVat = parseFloat((7/100)*ans + ans).toFixed(2);
+            document.getElementById("subtotal").innerHTML = ans;
+            document.getElementById("vat").innerHTML = vat;
+            document.getElementById("total").innerHTML = ansPlusVat;
+            }
+            function promoCode(){
+            document.getElementById("EnterCode").disabled = true;
+            alert("Congratulation ʕ·ᴥ·ʔ - Discound 50%!!");
+            ans = ans - (ans*(0.5));
+            vat = parseFloat((7/100)*ans).toFixed(2);
+            ansPlusVat = parseFloat((7/100)*ans + ans).toFixed(2);
+            document.getElementById("subtotal").innerHTML = ans;
+            document.getElementById("vat").innerHTML = vat;
+            document.getElementById("total").innerHTML = ansPlusVat;
+
+            }
+            function buttonUpStrawberry(){
+            sumStrawberry = sumStrawberry+1;
+            document.getElementById("sumItemStrawberry").value = sumStrawberry;
+            ansStrawberry = strawberryPrice*sumStrawberry;
+            document.getElementById("strawberryPrice").innerHTML = ansStrawberry;
+            clickCalculate();
+            }
+            function buttonDownStrawberry(){
+            if(sumStrawberry>0){
+            sumStrawberry = sumStrawberry-1;
+            }else{
+            sumStrawberry = 0;
+            }
+            document.getElementById("sumItemStrawberry").value = sumStrawberry;
+            ansStrawberry = strawberryPrice*sumStrawberry;
+            document.getElementById("strawberryPrice").innerHTML = ansStrawberry;
+            clickCalculate();
+            }
+            function buttonUpGuava(){
+            sumGuava = sumGuava+1;
+            document.getElementById("sumItemGuava").value = sumGuava;
+            ansGuava = guavaPrice*sumGuava;
+            document.getElementById("guavaPrice").innerHTML = ansGuava;
+            clickCalculate();
+            }
+            function buttonDownGuava(){
+            if(sumGuava>0){
+            sumGuava = sumGuava-1;
+            }else{
+            sumGuava = 0;
+            }
+            document.getElementById("sumItemGuava").value = sumGuava;
+            ansGuava = guavaPrice*sumGuava;
+            document.getElementById("guavaPrice").innerHTML = ansGuava;
+            clickCalculate();
+            }
+            function buttonUpPeach(){
+            sumPeach = sumPeach+1;
+            document.getElementById("sumItemPeach").value = sumPeach;
+            ansPeach = peachPrice*sumPeach;
+            document.getElementById("peachPrice").innerHTML = ansPeach;
+            clickCalculate();
+            }
+            function buttonDownPeach(){
+            if(sumPeach>0){
+            sumPeach = sumPeach-1;
+            }else{
+            sumPeach = 0;
+            }
+            document.getElementById("sumItemPeach").value = sumPeach;
+            ansPeach = peachPrice*sumPeach;
+            document.getElementById("peachPrice").innerHTML = ansPeach;
+            clickCalculate();
+            }
+        </script>
+
+
+    </body>
+</html>

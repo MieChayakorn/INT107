@@ -1,0 +1,122 @@
+
+* {
+  color:#f8f8f8;
+  box-sizing: border-box;
+}
+body {
+    display: table;
+    width: 100%;
+}
+.cell {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.content {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background-color: #262626;
+  display:inline-block;
+  padding:15px;
+  width:500px;
+  box-shadow:0px 0px .3px 1px rgba(0,0,0,.2);
+  
+  border-radius:3px;
+}
+.Add-photo {
+  text-align:left;
+}
+.Add-photo span {
+  font-size:12px;
+  margin-top:-5px;
+  display:block;
+}
+.Main_picture {
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.picture {
+  display:inline-block;
+  width:175px;
+  height:175px;
+  background:#2d2d2d;
+}
+.picture span
+{
+  margin: 46% auto;
+}
+.Tell-us {
+  text-align:left;
+}
+.Tell-us span {
+  font-size:12px;
+  margin-top:-5px;
+  display:block;
+}
+.Main_form {
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+}
+
+.Main_form label , .group {
+  display:inline-block;
+  width:calc(100% - 105px);
+}
+.Main_form label {
+  width:100px;
+  font-size:13px;
+}
+.Main_form .group input[type="text"] , .Main_form .group input[type="email"] , .Main_form .group input[type="password"] {
+    width: 85%;
+    padding: 2px;
+    padding-left: 11px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: 0px 0px 0.3px 1px rgba(0,0,0,.2);
+}
+.Main_form .group select {
+    width: 88%;
+    padding: 2px;
+    padding-left: 11px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: 0px 0px 0.3px 1px rgba(0,0,0,.2);
+}
+
+.Main_form .date select {
+    width: 26%;
+    margin-right: 14.5px;
+}
+
+.Main_form .group select option {
+  background:#262626;
+}
+.form-group {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.form-group .submit {
+  display: inline-block;
+  margin-left: 26%;
+}
+.form-group .submit button{
+  width:200px;
+  height:40px;
+  background:#a54549;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.form-group .submit span
+{
+  padding-left:3px;
+}
